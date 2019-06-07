@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/distanz9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowExpenses">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/car2"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:text="@string/car"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/method2"
+            app:layout_constraintStart_toStartOf="@+id/method2"
+            app:layout_constraintTop_toBottomOf="@+id/method2" />
+
+        <TextView
+            android:id="@+id/duration2"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:text="@string/duration"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/fuel2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/fuel2"
+            app:layout_constraintTop_toBottomOf="@+id/fuel2" />
+
+        <TextView
+            android:id="@+id/method2"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:text="@string/calculat_methode"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/duration2"
+            app:layout_constraintStart_toStartOf="@+id/duration2"
+            app:layout_constraintTop_toBottomOf="@+id/duration2" />
+
+        <TextView
+            android:id="@+id/distanc2"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:text="@string/distanz"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/perUnit2"
+            app:layout_constraintStart_toStartOf="@+id/perUnit2"
+            app:layout_constraintTop_toBottomOf="@+id/perUnit2" />
+
+        <TextView
+            android:id="@+id/perUnit2"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="84dp"
+            android:text="@string/expenses_per_unit"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fuel2"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:text="@string/fuel"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/distanc2"
+            app:layout_constraintStart_toStartOf="@+id/distanc2"
+            app:layout_constraintTop_toBottomOf="@+id/distanc2" />
+
+        <TextView
+            android:id="@+id/Distanz"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/doofesFeld"
+            app:layout_constraintStart_toStartOf="@+id/doofesFeld"
+            app:layout_constraintTop_toBottomOf="@+id/perUnit2" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/fuel"
+            app:layout_constraintStart_toStartOf="@+id/fuel"
+            app:layout_constraintTop_toTopOf="@+id/duration2" />
+
+        <TextView
+            android:id="@+id/method"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/duration"
+            app:layout_constraintStart_toStartOf="@+id/duration"
+            app:layout_constraintTop_toTopOf="@+id/method2" />
+
+        <TextView
+            android:id="@+id/doofesFeld"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/perUnit2" />
+
+        <TextView
+            android:id="@+id/car"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/method"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/method"
+            app:layout_constraintTop_toBottomOf="@+id/method2" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/car"
+            app:layout_constraintStart_toStartOf="@+id/car"
+            app:layout_constraintTop_toTopOf="@+id/Total2" />
+
+        <TextView
+            android:id="@+id/Total2"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:text="@string/total"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/car2"
+            app:layout_constraintStart_toStartOf="@+id/car2"
+            app:layout_constraintTop_toBottomOf="@+id/car2" />
+
+        <TextView
+            android:id="@+id/fuel"
+            android:layout_width="158dp"
+            android:layout_height="0dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/Distanz"
+            app:layout_constraintStart_toStartOf="@+id/Distanz"
+            app:layout_constraintTop_toTopOf="@+id/fuel2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

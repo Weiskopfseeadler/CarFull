@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Start"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="183dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onStart"
+        android:text="@string/begin"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/identificationNumber"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="@+id/identificationNumber"
+        app:layout_constraintTop_toBottomOf="@+id/identificationNumber" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/prename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/prename"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/identificationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/idendification_number"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@+id/prename"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/prename"
+        app:layout_constraintTop_toBottomOf="@+id/prename" />
+
+    <TextView
+        android:id="@+id/Errormessage"
+        android:layout_width="268dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/your_input_is_wrong_pleas_check_your_name_and_identification_number"
+        android:textColor="@color/colorAlarm"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/identificationNumber"
+        app:layout_constraintStart_toStartOf="@+id/identificationNumber"
+        app:layout_constraintTop_toBottomOf="@+id/identificationNumber"
+        tools:visibility="invisible" />
+
+
+</android.support.constraint.ConstraintLayout>
